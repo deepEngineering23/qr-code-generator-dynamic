@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi QR Code Generator (Dynamic)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>WiFi QR Code Generator (Dynamic)</h1>
+    <form id="wifi-form">
+        <label for="ssid">SSID:</label>
+        <input type="text" id="ssid" placeholder="Enter WiFi name" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter WiFi password" required>
+        <label for="encryption">Encryption:</label>
+        <select id="encryption">
+            <option value="WPA">WPA</option>
+            <option value="WEP">WEP</option>
+        </select>
+        <label for="hidden">Hidden network?</label>
+        <input type="checkbox" id="hidden">
+    </form>
+    <div id="qrcode"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
